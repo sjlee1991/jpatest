@@ -1,0 +1,26 @@
+spring:
+  # test:
+  #   database:
+  #     replace: NONE
+  datasource:
+    # url: jdbc:mysql://localhost:3306/jpatest?serverTimezone=UTC&characterEncoding=UTF-8
+    # username: root
+    # password: 123456
+    # driver-class-name: com.mysql.cj.jdbc.Driver
+    # url: jdbc:h2:~/jpatest
+    url: jdbc:h2:tcp://localhost/~/jpatest
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  h2:
+    console:
+      enabled: true
+  jpa:
+    # database: mysql
+    database: H2
+    show-sql: true
+    properties:
+      hibernate:
+        # format_sql: true
+        ddl-auto: none
+
